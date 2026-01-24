@@ -30,12 +30,22 @@ export default async () => {
   };
 
   return {
+    base: "./",  // Use relative paths for all assets
     plugins: [Middleware.A2AMiddleware.plugin()],
     build: {
+      outDir: "dist",
+      emptyOutDir: true,
       rollupOptions: {
         input: entry,
+        output: {
+          entryFileNames: "assets/[name]-[hash].js",
+          chunkFileNames: "assets/[name]-[hash].js",
+          assetFileNames: "assets/[name]-[hash][extname]",
+        },
       },
       target: "esnext",
+      minify: "esbuild", // Use esbuild instead of terser (faster and built-in)
+      sourcemap: true,
     },
     define: {},
     resolve: {

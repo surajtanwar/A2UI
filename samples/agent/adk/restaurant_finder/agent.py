@@ -100,6 +100,20 @@ class RestaurantAgent:
             instruction = AGENT_INSTRUCTION + get_ui_prompt(
                 self.base_url, RESTAURANT_UI_EXAMPLES
             )
+            
+            # Save UI instruction to file for inspection
+            # try:
+            #     with open("ui_instruction.txt", "w", encoding="utf-8") as f:
+            #         f.write("=" * 80 + "\n")
+            #         f.write("RESTAURANT AGENT - UI INSTRUCTION PROMPT\n")
+            #         f.write("=" * 80 + "\n\n")
+            #         f.write(instruction)
+            #         f.write("\n\n" + "=" * 80 + "\n")
+            #         f.write("END OF INSTRUCTION\n")
+            #         f.write("=" * 80 + "\n")
+            #     logger.info("UI instruction saved to ui_instruction.txt")
+            # except Exception as e:
+            #     logger.error(f"Failed to save UI instruction to file: {e}")
         else:
             instruction = get_text_prompt()
 
