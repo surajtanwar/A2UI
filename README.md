@@ -166,3 +166,52 @@ A2UI is an **Apache 2.0** licensed project. We believe the future of UI is agent
 and we want to work with you to help build it.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+
+
+response://
+[
+  { "beginRendering": { "surfaceId": "default", "root": "root-column", "styles": { "primaryColor": "#FF0000", "font": "Roboto" } } },
+  { "surfaceUpdate": {
+    "surfaceId": "default",
+    "components": [
+      { "id": "root-column", "component": { "Column": { "children": { "explicitList": ["title-heading", "item-list"] } } } }, 
+      { "id": "title-heading", "component": { "Text": { "usageHint": "h1", "text": { "path": "title" } } } },
+      { "id": "item-list", "component": { "List": { "direction": "vertical", "children": { "template": { "componentId": "item-card-template", "dataBinding": "/items" } } } } },
+      { "id": "item-card-template", "component": { "Card": { "child": "card-layout" } } },
+      { "id": "card-layout", "component": { "Row": { "children": { "explicitList": ["template-image", "card-details"] } } } },
+      { "id": "template-image", "weight": 1, "component": { "Image": { "url": { "path": "imageUrl" } } } },
+      { "id": "card-details", "weight": 2, "component": { "Column": { "children": { "explicitList": ["template-name", "template-rating", "template-detail", "template-link", "template-book-button"] } } } },
+      { "id": "template-name", "component": { "Text": { "usageHint": "h3", "text": { "path": "name" } } } },
+      { "id": "template-rating", "component": { "Text": { "text": { "path": "rating" } } } },
+      { "id": "template-detail", "component": { "Text": { "text": { "path": "detail" } } } },
+      { "id": "template-link", "component": { "Text": { "text": { "path": "infoLink" } } } },
+      { "id": "template-book-button", "component": { "Button": { "child": "book-now-text", "primary": true, "action": { "name": "book_restaurant", "context": [ { "key": "restaurantName", "value": { "path": "name" } }, { "key": "imageUrl", "value": { "path": "imageUrl" } }, { "key": "address", "value": { "path": "address" } } ] } } } },
+      { "id": "book-now-text", "component": { "Text": { "text": { "literalString": "Book Now" } } } }
+    ]
+  } },
+  { "dataModelUpdate": {
+    "surfaceId": "default",
+    "path": "/",
+    "contents": [
+      { "key": "title", "valueString": "Top Chinese Restaurants" },
+      { "key": "items", "valueMap": [
+        { "key": "item1", "valueMap": [
+          { "key": "name", "valueString": "Xi'an Famous Foods" },
+          { "key": "rating", "valueString": "★★★★☆" },
+          { "key": "detail", "valueString": "Spicy and savory hand-pulled noodles." },
+          { "key": "infoLink", "valueString": "[More Info](https://www.xianfoods.com/)" },
+          { "key": "imageUrl", "valueString": "http://localhost:10002/static/shrimpchowmein.jpeg" },
+          { "key": "address", "valueString": "81 St Marks Pl, New York, NY 10003" }
+        ] },
+        { "key": "item2", "valueMap": [
+          { "key": "name", "valueString": "Han Dynasty" },     
+          { "key": "rating", "valueString": "★★★★☆" },
+          { "key": "detail", "valueString": "Authentic Szechuan cuisine." },
+          { "key": "infoLink", "valueString": "[More Info](https://www.handynasty.net/)" },
+          { "key": "imageUrl", "valueString": "http://localhost:10002/static/mapotofu.jpeg" },
+          { "key": "address", "valueString": "90 3rd Ave, New York, NY 10003" }
+        ] }
+      ] }
+    ]
+  } }
+]
