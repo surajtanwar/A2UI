@@ -1,0 +1,271 @@
+[
+  {
+    "id": "root",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "background",
+            "zone1",
+            "zone2",
+            "dhw"
+          ]
+        },
+        "distribution": "spaceAround",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "background",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": []
+        },
+        "distribution": "start",
+        "alignment": "stretch"
+      }
+    }
+  },
+  {
+    "id": "zone1",
+    "component": {
+      "Button": {
+        "child": "zone1Content",
+        "primary": true,
+        "action": {
+          "name": "selectZone",
+          "context": [
+            {
+              "key": "zone",
+              "value": {
+                "literalString": "Zone 1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "zone1Content",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "zone1Label",
+            "zone1TempCurrent",
+            "zone1Arrow",
+            "zone1TempTarget"
+          ]
+        },
+        "distribution": "center",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "zone1Label",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Zone 1"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "zone1TempCurrent",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "45.0°C"
+        },
+        "usageHint": "h2"
+      }
+    }
+  },
+  {
+    "id": "zone1Arrow",
+    "component": {
+      "Icon": {
+        "name": {
+          "literalString": "arrowForward"
+        }
+      }
+    }
+  },
+  {
+    "id": "zone1TempTarget",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "50"
+        },
+        "usageHint": "caption"
+      }
+    }
+  },
+  {
+    "id": "zone2",
+    "component": {
+      "Button": {
+        "child": "zone2Content",
+        "primary": true,
+        "action": {
+          "name": "selectZone",
+          "context": [
+            {
+              "key": "zone",
+              "value": {
+                "literalString": "Zone 2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "zone2Content",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "zone2Label",
+            "zone2TempCurrent",
+            "zone2Arrow",
+            "zone2TempTarget"
+          ]
+        },
+        "distribution": "center",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "zone2Label",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Zone 2"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "zone2TempCurrent",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "40.0°C"
+        },
+        "usageHint": "h2"
+      }
+    }
+  },
+  {
+    "id": "zone2Arrow",
+    "component": {
+      "Icon": {
+        "name": {
+          "literalString": "arrowForward"
+        }
+      }
+    }
+  },
+  {
+    "id": "zone2TempTarget",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "40"
+        },
+        "usageHint": "caption"
+      }
+    }
+  },
+  {
+    "id": "dhw",
+    "component": {
+      "Button": {
+        "child": "dhwContent",
+        "primary": true,
+        "action": {
+          "name": "selectZone",
+          "context": [
+            {
+              "key": "zone",
+              "value": {
+                "literalString": "DHW"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "dhwContent",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "dhwLabel",
+            "dhwTempCurrent",
+            "dhwArrow",
+            "dhwTempTarget"
+          ]
+        },
+        "distribution": "center",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "dhwLabel",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "DHW"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "dhwTempCurrent",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "50.0°C"
+        },
+        "usageHint": "h2"
+      }
+    }
+  },
+  {
+    "id": "dhwArrow",
+    "component": {
+      "Icon": {
+        "name": {
+          "literalString": "arrowForward"
+        }
+      }
+    }
+  },
+  {
+    "id": "dhwTempTarget",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "52"
+        },
+        "usageHint": "caption"
+      }
+    }
+  }
+]

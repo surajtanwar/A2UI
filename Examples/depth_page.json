@@ -1,0 +1,258 @@
+[
+  {
+    "id": "root",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "leftPanel",
+            "divider",
+            "rightPanel"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "leftPanel",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "leftLabel",
+            "leftTemperature",
+            "bottomLeftPanel"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "start"
+      }
+    }
+  },
+  {
+    "id": "leftLabel",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Current water outlet"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "leftTemperature",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "45.0°C"
+        },
+        "usageHint": "h1"
+      }
+    }
+  },
+  {
+    "id": "bottomLeftPanel",
+    "component": {
+      "Card": {
+        "child": "bottomLeftContent"
+      }
+    }
+  },
+  {
+    "id": "bottomLeftContent",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "modeRow",
+            "tempRow"
+          ]
+        },
+        "distribution": "start",
+        "alignment": "start"
+      }
+    }
+  },
+  {
+    "id": "modeRow",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "modeLabel",
+            "modeValue"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "modeLabel",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Mode"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "modeValue",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Heat"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "tempRow",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "tempLabel",
+            "tempValue"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "tempLabel",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Temp"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "tempValue",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "50°C"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "divider",
+    "component": {
+      "Divider": {
+        "axis": "vertical"
+      }
+    }
+  },
+  {
+    "id": "rightPanel",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "rightLabel",
+            "rightTemperature",
+            "bottomRightButtons"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "start"
+      }
+    }
+  },
+  {
+    "id": "rightLabel",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Current indoor"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "rightTemperature",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "21.0°C"
+        },
+        "usageHint": "h1"
+      }
+    }
+  },
+  {
+    "id": "bottomRightButtons",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "clockButton",
+            "powerButton"
+          ]
+        },
+        "distribution": "start",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "clockButton",
+    "component": {
+      "Button": {
+        "child": "clockIcon",
+        "primary": false,
+        "action": {
+          "name": "clockAction"
+        }
+      }
+    }
+  },
+  {
+    "id": "clockIcon",
+    "component": {
+      "Icon": {
+        "name": {
+          "literalString": "calendarToday"
+        }
+      }
+    }
+  },
+  {
+    "id": "powerButton",
+    "component": {
+      "Button": {
+        "child": "powerIcon",
+        "primary": true,
+        "action": {
+          "name": "powerToggle"
+        }
+      }
+    }
+  },
+  {
+    "id": "powerIcon",
+    "component": {
+      "Icon": {
+        "name": {
+          "literalString": "power"
+        }
+      }
+    }
+  }
+]

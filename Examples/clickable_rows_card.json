@@ -1,0 +1,176 @@
+[
+  {
+    "id": "root",
+    "component": {
+      "Card": {
+        "child": "cardContent"
+      }
+    }
+  },
+  {
+    "id": "cardContent",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "row1",
+            "row2",
+            "row3"
+          ]
+        },
+        "distribution": "start",
+        "alignment": "stretch",
+        "backgroundColor": {
+          "literalString": "blue"
+        }
+      }
+    }
+  },
+  {
+    "id": "row1",
+    "component": {
+      "Button": {
+        "child": "row1Text",
+        "action": {
+          "name": "row1Click"
+        },
+        "primary": false
+      }
+    }
+  },
+  {
+    "id": "row1Text",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "row1TextStart",
+            "row1TextEnd"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row1TextStart",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 1 Start"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "row1TextEnd",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 1 End"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "row2",
+    "component": {
+      "Button": {
+        "child": "row2Text",
+        "action": {
+          "name": "row2Click"
+        },
+        "primary": false
+      }
+    }
+  },
+  {
+    "id": "row2Text",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "row2TextStart",
+            "row2TextEnd"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row2TextStart",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 2 Start"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "row2TextEnd",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 2 End"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "row3",
+    "component": {
+      "Button": {
+        "child": "row3Text",
+        "action": {
+          "name": "row3Click"
+        },
+        "primary": false
+      }
+    }
+  },
+  {
+    "id": "row3Text",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "row3TextStart",
+            "row3TextEnd"
+          ]
+        },
+        "distribution": "spaceBetween",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row3TextStart",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 3 Start"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "row3TextEnd",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "Row 3 End"
+        },
+        "usageHint": "body"
+      }
+    }
+  }
+]
