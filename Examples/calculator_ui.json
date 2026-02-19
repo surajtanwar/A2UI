@@ -1,0 +1,719 @@
+[
+  {
+    "id": "root",
+    "component": {
+      "Card": {
+        "child": "calculatorColumn"
+      }
+    }
+  },
+  {
+    "id": "calculatorColumn",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "displayScreen",
+            "buttonsGrid"
+          ]
+        },
+        "distribution": "start",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "displayScreen",
+    "component": {
+      "TextField": {
+        "label": {
+          "literalString": ""
+        },
+        "text": {
+          "path": "/displayValue"
+        },
+        "textFieldType": "shortText"
+      }
+    }
+  },
+  {
+    "id": "buttonsGrid",
+    "component": {
+      "Column": {
+        "children": {
+          "explicitList": [
+            "row1",
+            "row2",
+            "row3",
+            "row4",
+            "row5"
+          ]
+        },
+        "distribution": "start",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row1",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "btn7",
+            "btn8",
+            "btn9",
+            "btnDivide"
+          ]
+        },
+        "distribution": "spaceEvenly",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row2",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "btn4",
+            "btn5",
+            "btn6",
+            "btnMultiply"
+          ]
+        },
+        "distribution": "spaceEvenly",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row3",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "btn1",
+            "btn2",
+            "btn3",
+            "btnMinus"
+          ]
+        },
+        "distribution": "spaceEvenly",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row4",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "btn0",
+            "btnDecimal",
+            "btnEquals",
+            "btnPlus"
+          ]
+        },
+        "distribution": "spaceEvenly",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "row5",
+    "component": {
+      "Row": {
+        "children": {
+          "explicitList": [
+            "btnClear",
+            "btnEmpty1",
+            "btnEmpty2",
+            "btnEmpty3"
+          ]
+        },
+        "distribution": "spaceEvenly",
+        "alignment": "center"
+      }
+    }
+  },
+  {
+    "id": "btn0",
+    "component": {
+      "Button": {
+        "child": "btn0Text",
+        "primary": true,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn0Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "0"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn1",
+    "component": {
+      "Button": {
+        "child": "btn1Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn1Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "1"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn2",
+    "component": {
+      "Button": {
+        "child": "btn2Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn2Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "2"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn3",
+    "component": {
+      "Button": {
+        "child": "btn3Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "3"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn3Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "3"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn4",
+    "component": {
+      "Button": {
+        "child": "btn4Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "4"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn4Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "4"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn5",
+    "component": {
+      "Button": {
+        "child": "btn5Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "5"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn5Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "5"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn6",
+    "component": {
+      "Button": {
+        "child": "btn6Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "6"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn6Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "6"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn7",
+    "component": {
+      "Button": {
+        "child": "btn7Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "7"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn7Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "7"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn8",
+    "component": {
+      "Button": {
+        "child": "btn8Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "8"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn8Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "8"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btn9",
+    "component": {
+      "Button": {
+        "child": "btn9Text",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "9"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btn9Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "9"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnPlus",
+    "component": {
+      "Button": {
+        "child": "btnPlusText",
+        "primary": false,
+        "action": {
+          "name": "operator",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "+"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btnPlusText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "+"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnMinus",
+    "component": {
+      "Button": {
+        "child": "btnMinusText",
+        "primary": false,
+        "action": {
+          "name": "operator",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "−"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btnMinusText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "−"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnMultiply",
+    "component": {
+      "Button": {
+        "child": "btnMultiplyText",
+        "primary": false,
+        "action": {
+          "name": "operator",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "×"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btnMultiplyText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "×"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnDivide",
+    "component": {
+      "Button": {
+        "child": "btnDivideText",
+        "primary": false,
+        "action": {
+          "name": "operator",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "÷"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btnDivideText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "÷"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnEquals",
+    "component": {
+      "Button": {
+        "child": "btnEqualsText",
+        "primary": false,
+        "action": {
+          "name": "equals"
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEqualsText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "="
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnDecimal",
+    "component": {
+      "Button": {
+        "child": "btnDecimalText",
+        "primary": false,
+        "action": {
+          "name": "input",
+          "context": [
+            {
+              "key": "value",
+              "value": {
+                "literalString": "."
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "btnDecimalText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "."
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnClear",
+    "component": {
+      "Button": {
+        "child": "btnClearText",
+        "primary": false,
+        "action": {
+          "name": "clear"
+        }
+      }
+    }
+  },
+  {
+    "id": "btnClearText",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": "C"
+        },
+        "usageHint": "body"
+      }
+    }
+  },
+  {
+    "id": "btnEmpty1",
+    "component": {
+      "Button": {
+        "child": "btnEmpty1Text",
+        "primary": false,
+        "action": {
+          "name": "noop"
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEmpty1Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": ""
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEmpty2",
+    "component": {
+      "Button": {
+        "child": "btnEmpty2Text",
+        "primary": false,
+        "action": {
+          "name": "noop"
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEmpty2Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": ""
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEmpty3",
+    "component": {
+      "Button": {
+        "child": "btnEmpty3Text",
+        "primary": false,
+        "action": {
+          "name": "noop"
+        }
+      }
+    }
+  },
+  {
+    "id": "btnEmpty3Text",
+    "component": {
+      "Text": {
+        "text": {
+          "literalString": ""
+        }
+      }
+    }
+  }
+]
